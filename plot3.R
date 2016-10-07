@@ -14,7 +14,7 @@ with(analysed_data, {
                     legend("topright", legend = legend_labels, col = labels_colors, lwd = 1)
                     }
 )
-axis(1, at = 1:3, labels = c("Thu", "Fri", "Sat"))
+s
 # generating the png file
 dev.copy(png, file = "plot3.png", height = 480, width = 480)
 dev.off()
