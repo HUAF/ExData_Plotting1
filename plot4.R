@@ -7,7 +7,7 @@ par(mfrow = c(2,2))
 legend_labels <- c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
 labels_colors <- c("black", "red", "blue")
 with(analysed_data, {
-    plot(Global_active_power / 500 ~ dateTime, type="l", xlab="", ylab = "Global Active Power (kilowatts)")
+    plot(Global_active_power~ dateTime, type="l", xlab="", ylab = "Global Active Power (kilowatts)")
     plot(Voltage ~ dateTime, type = "l")
     
     plot(Sub_metering_1 ~ dateTime, type="l", ylab = "Energy sub metering", xlab = "")
